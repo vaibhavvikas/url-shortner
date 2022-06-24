@@ -24,7 +24,6 @@ def encode_url(url: str, user=None, ttl=None) -> Response:
         else:
             encoded_url = URL(url, ttl=60)
         url_shortner.urls[encoded_url.shortened_url] = encoded_url
-        print(encoded_url)
         return response_util.response_to_json("URL created successfully", data=encoded_url.__dict__)
     except Exception as e:
         return response_util.error_response(e)
@@ -36,8 +35,19 @@ def get_all_urls() -> Response:
         print(url_shortner.urls)
         for each in url_shortner.urls:
             data[each] = url_shortner.urls[each].__dict__
-        print(data)
         return response_util.response_to_json("URLs retrieved successfully", data=data)
+    except Exception as e:
+        return response_util.error_response(e)
+
+
+def get_user_urls(userid: str) -> Response:
+    try:
+        data = {}
+        for each in url_shortner.users[userid].urls:
+            data[each] = url_shortner.users[userid].urls[each].__dict__
+        print(data)
+        return response_util.response_to_json(f"URLs retrieved successfully for {userid}!",\
+            data=data)
     except Exception as e:
         return response_util.error_response(e)
 

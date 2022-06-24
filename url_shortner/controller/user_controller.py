@@ -15,13 +15,12 @@ def error_handler(exception):
 
 @bp.route("/register", methods={"POST"})
 def register_user():
-    username = request.form["username"]
     userid = request.form["userid"]
     name = request.form["name"]
-    return user_service_impl.create_user(userid, username, name)
+    return user_service_impl.create_user(userid, name)
 
 
-@bp.route("/<path:userid>/shorten_url", methods=["PUT"])
+@bp.route("/<path:userid>/shortenurl", methods=["PUT"])
 def shorten_url(userid):
     url = request.form["url"]
     try:
@@ -29,4 +28,9 @@ def shorten_url(userid):
     except:
         ttl = None
     return url_service_impl.encode_url(url, userid, ttl)
+
+
+@bp.route("/<path:userid>/urls", methods=["GET"])
+def get_urls(userid):
+    return url_service_impl.get_user_urls(userid)
 

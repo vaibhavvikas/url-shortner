@@ -1,7 +1,7 @@
 from flask import jsonify
 
 
-def response_to_json(message, data=None, status="SUCCESS", status_code=200):
+def response_to_json(message: str, data=None, status="SUCCESS", status_code=200):
     rv = dict()
     rv["message"] = message
     if data: rv["data"] = data
