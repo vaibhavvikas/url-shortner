@@ -24,7 +24,7 @@ A python flask application to shorten the URL provided by users whether rigester
 
 
 * Free software: MIT license
-* Documentation: https://url-shortner.readthedocs.io.
+* Documentation: https://vaibhavvikas-url-shortner.readthedocs.io.
 
 
 Features
