@@ -1,8 +1,8 @@
 # URL Shortner
 
-[![image](https://img.shields.io/pypi/v/url_shortner.svg)](https://pypi.python.org/pypi/url_shortner)
-[![image](https://readthedocs.org/projects/vaibhavvikas-url-shortner/badge/?version=latest)](https://vaibhavvikas-url-shortner.readthedocs.io/en/latest/?version=latest)
-[![image](https://pyup.io/repos/github/vaibhavvikas/url_shortner/shield.svg)](https://pyup.io/repos/github/vaibhavvikas/url_shortner/)
+![GitHub top language](https://img.shields.io/github/languages/top/vaibhavvikas/url-shortner)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vaibhavvikas/url-shortner)
+[![pages-build-deployment](https://github.com/vaibhavvikas/url-shortner/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/vaibhavvikas/url-shortner/actions/workflows/pages/pages-build-deployment)
 
 A python flask application to shorten the URL provided by users whether rigestered or not.
 
