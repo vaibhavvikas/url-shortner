@@ -5,7 +5,7 @@
 import pytest
 
 
-from url_shortner import url_shortner
+import url_shortner
 
 
 @pytest.fixture
