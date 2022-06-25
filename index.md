@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# Welcome to URL Shortner’s documentation!
 
-You can use the [editor on GitHub](https://github.com/vaibhavvikas/url-shortner/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# Contents:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+* [URL Shortner](readme.md)
+    * [Problem Statement](readme.md#problem-statement)
+    * [Stores](readme.md#stores)
+    * [Features](readme.md#features)
+    * [Credits](readme.md#credits)
 
-### Markdown
+* [Installation](installation.md)
+    * [Stable release](installation.md#stable-release)
+    * [From sources](installation.md#from-sources)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* [Usage](usage.md)
 
-```markdown
-Syntax highlighted code block
+* [Contributing](contributing.md)
+    * [Types of Contributions](contributing.md#types-of-contributions)
+    * [Get Started!](contributing.md#get-started)
+    * [Pull Request Guidelines](contributing.md#pull-request-guidelines)
+    * [Tips](contributing.md#tips)
+    * [Deploying](contributing.md#deploying)
 
-# Header 1
-## Header 2
-### Header 3
+* [Credits](authors.md)
+    * [Development Lead](authors.md#development-lead)
+    * [Contributors](authors.md#contributors)
 
-- Bulleted
-- List
+* [History](history.md)
+    * [0.1.0 (2022-06-24)](history.md#id1)
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+# Indices and tables
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vaibhavvikas/url-shortner/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+* [Index](genindex.md)
+* [Module Index](py-modindex.md)
+* [Search Page](search.md)
