@@ -20,13 +20,11 @@ The system should fulfill the following line items.
 
 ## Stores
 
-
 1. Registered user’s details, they are:
         i. user_id
         ii. username
         iii. name
         iv. list of shortened URLs
-
 
 2. Shortened URL’s details, they are:
         i. Actual URL
