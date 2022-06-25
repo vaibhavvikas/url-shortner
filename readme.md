@@ -4,7 +4,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vaibhavvikas/url-shortner)
 ![pages-build-deployment](https://github.com/vaibhavvikas/url-shortner/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)
 
-A python flask application to shorten the URL provided by users whether rigestered or not.
+A python flask application to shorten the URL provided by users whether registered or not.
 
 * Free software: MIT license
 * Documentation: [https://vaibhavvikas.github.io/url-shortner](https://vaibhavvikas.github.io/url-shortner/).
@@ -18,15 +18,15 @@ The system should fulfill the following line items.
 ## Stores
 
 1. Registered user’s details, they are:
-        i. user_id
-        ii. username
-        iii. name
-        iv. list of shortened URLs
+    1. user_id
+    2. username
+    3. name
+    4. list of shortened URLs
 2. Shortened URL’s details, they are:
-        i. Actual URL
-        ii. Shortened URL
-        iii. Creation time
-        iv. TTL (Time to live)
+    1. Actual URL
+    2. Shortened URL
+    3. Creation time
+    4. TTL (Time to live)
 
 ## Features
 
@@ -40,38 +40,32 @@ The system should fulfill the following line items.
 
 ## API Usage
 
-##### Register User (POST):
+#### Register User (POST):
 ```console
 $ http://127.0.0.1:5000/user/register
-
 {
     "userid": "vaibhav_vikas",
     "name": "Vaibhav Vikas"
 }
 
 Response 200 OK:
-
 {
     "message": "User created successfully",
     "status": "SUCCESS"
 }
 ```
 
-##### Registered User shortens an URL (PUT):
+#### Registered User shortens an URL (PUT):
 ```console
 $ http://127.0.0.1:5000/user/<userid:vaibhav_vikas>/shortenurl
-
 {
     "url": "google.com",
     "ttl": 60
 }
 
-{
-    "url": "google.com"
-}
+{"url": "google.com"}
 
 Response 200 OK:
-
 {
     "data": {
         "creation_time": "250622222218",
@@ -85,7 +79,7 @@ Response 200 OK:
 }
 ```
 
-##### Get all URLs created by an User (GET):
+#### Get all URLs created by an User (GET):
 ```console
 $ http://127.0.0.1:5000/user/<userid:vaibhav_vikas>/urls
 
@@ -110,17 +104,15 @@ Response 200 OK:
     "message": "URLs retrieved successfully for vaibhav_vikas!",
     "status": "SUCCESS"
 }
-
 ```
 
-##### Anonymous user shortens an URL (PUT):
+#### Anonymous user shortens an URL (PUT):
 ```console
 $ http://127.0.0.1:5000/url/shortenurl
 
 {"url":"google.com"}
 
 Response 200 OK:
-
 {
     "data": {
         "creation_time": "250622222828",
@@ -132,10 +124,9 @@ Response 200 OK:
     "message": "URL created successfully",
     "status": "SUCCESS"
 }
-
 ```
 
-##### Get the original URL from encoded URL (GET):
+#### Get the original URL from encoded URL (GET):
 ```console
 $ http://127.0.0.1:5000/url/geturl/<shortened_url:eZGWXEOanG>
 
@@ -153,7 +144,7 @@ Response 200 OK:
 }
 ```
 
-##### Miscellaneous get all URLs for debugging (GET):
+#### Miscellaneous get all URLs for debugging (GET):
 ```console
 $ http://127.0.0.1:5000/url/listurls
 
@@ -188,4 +179,4 @@ Response 200 OK
 ```
 
 ## Credits
-Vaibhav Vikas 
+Vaibhav Vikas, 2022
