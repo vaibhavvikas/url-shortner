@@ -38,3 +38,9 @@ Once you have a copy of the source, you can install it with:
 ```console
 $ python setup.py install
 ```
+
+After installation is complete, you can run the application with:
+
+```console
+$ python -m url_shortner
+```
