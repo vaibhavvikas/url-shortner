@@ -1,6 +1,6 @@
 class User:
 
-    def __init__ (self, userid, name):
+    def __init__(self, userid, name):
         self.userid = userid
         self.name = name
         self.status = True
@@ -8,7 +8,7 @@ class User:
 
     def deactivate_account(self):
         self.status = None
-            
+
     def __str__(self):
         return (
             f"userid: {self.userid}\n"

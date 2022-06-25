@@ -11,7 +11,7 @@ class InvalidAPI(Exception):
         if status_code:
             self.status_code = status_code
         self.payload = payload
-    
+
     def response(self):
         rv = dict(self.payload or ())
         rv["message"] = self.message

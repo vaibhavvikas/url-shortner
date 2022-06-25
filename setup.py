@@ -4,10 +4,10 @@
 from pathlib import Path
 from setuptools import setup, find_packages
 
-with open('README.rst') as readme_file:
+with open('README.md') as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.rst') as history_file:
+with open('history.md') as history_file:
     history = history_file.read()
 
 test_requirements = ['pytest>=3', ]
@@ -28,7 +28,7 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
     ],
-    description="A python flask application to shorten the URL provided by users whether rigestered or not.",
+    description="A python flask application to shorten the URL provided by users whether registered or not.",
     install_requires=project_dir.joinpath('requirements.txt').read_text().split("\n"),
     license="MIT license",
     long_description=readme + '\n\n' + history,

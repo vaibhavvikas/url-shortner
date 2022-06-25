@@ -11,8 +11,9 @@ def get_all_urls():
 
 @bp.route("/shortenurl", methods=["PUT"])
 def shorten_url():
-    url = request.form["url"]
+    url = request.get_json()["url"]
     return url_service_impl.encode_url(url)
+
 
 @bp.route("/geturl/<path:url>", methods=["GET"])
 def decode_url(url):

@@ -1,6 +1,7 @@
 from datetime import datetime
 from url_shortner.service.impl import url_service_impl
 
+
 class URL:
 
     def __init__(self, url, owner=None, ttl=None):
@@ -15,5 +16,5 @@ class URL:
             f"url: {self.url}\n"
             f"shortened_url: {self.shortened_url}\n"
             f"creation_time: {self.creation_time}\n"
-            f"Expiry: {str(self.ttl)+' minutes' if self.ttl else 'Never'}"
+            f"Expiry: {str(self.ttl) + ' minutes' if self.ttl else 'Never'}"
         )

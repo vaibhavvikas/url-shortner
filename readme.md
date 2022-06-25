@@ -38,5 +38,154 @@ The system should fulfill the following line items.
 * The system should provide flexibility to registered users to add TTL to the requested URL or to keep it forever. Whereas, for an anonymous user it should always put some system defined TTL. You are free to use any number here.
 * The system should be able to remove expired shortened/actual URLs from the system. You are free to use any strategy to do it.
 
+## API Usage
+
+##### Register User (POST):
+```console
+$ http://127.0.0.1:5000/user/register
+
+{
+    "userid": "vaibhav_vikas",
+    "name": "Vaibhav Vikas"
+}
+
+Response 200 OK:
+
+{
+    "message": "User created successfully",
+    "status": "SUCCESS"
+}
+```
+
+##### Registered User shortens an URL (PUT):
+```console
+$ http://127.0.0.1:5000/user/<userid:vaibhav_vikas>/shortenurl
+
+{
+    "url": "google.com",
+    "ttl": 60
+}
+
+{
+    "url": "google.com"
+}
+
+Response 200 OK:
+
+{
+    "data": {
+        "creation_time": "250622222218",
+        "owner": "vaibhav_vikas",
+        "shortened_url": "ZfcXBmEekiV",
+        "ttl": null,
+        "url": "youtube.com"
+    },
+    "message": "URL created successfully",
+    "status": "SUCCESS"
+}
+```
+
+##### Get all URLs created by an User (GET):
+```console
+$ http://127.0.0.1:5000/user/<userid:vaibhav_vikas>/urls
+
+Response 200 OK:
+{
+    "data": {
+        "GeumgANQZMO": {
+            "creation_time": "250622222235",
+            "owner": "vaibhav_vikas",
+            "shortened_url": "GeumgANQZMO",
+            "ttl": 180,
+            "url": "yahoo.co.in"
+        },
+        "ZfcXBmEekiV": {
+            "creation_time": "250622222218",
+            "owner": "vaibhav_vikas",
+            "shortened_url": "ZfcXBmEekiV",
+            "ttl": null,
+            "url": "youtube.com"
+        }
+    },
+    "message": "URLs retrieved successfully for vaibhav_vikas!",
+    "status": "SUCCESS"
+}
+
+```
+
+##### Anonymous user shortens an URL (PUT):
+```console
+$ http://127.0.0.1:5000/url/shortenurl
+
+{"url":"google.com"}
+
+Response 200 OK:
+
+{
+    "data": {
+        "creation_time": "250622222828",
+        "owner": null,
+        "shortened_url": "eZGWXEOanG",
+        "ttl": 60,
+        "url": "google.com"
+    },
+    "message": "URL created successfully",
+    "status": "SUCCESS"
+}
+
+```
+
+##### Get the original URL from encoded URL (GET):
+```console
+$ http://127.0.0.1:5000/url/geturl/<shortened_url:eZGWXEOanG>
+
+Response 200 OK:
+{
+    "data": {
+        "creation_time": "250622222828",
+        "owner": null,
+        "shortened_url": "eZGWXEOanG",
+        "ttl": 60,
+        "url": "google.com"
+    },
+    "message": "URL retrieved successfully",
+    "status": "SUCCESS"
+}
+```
+
+##### Miscellaneous get all URLs for debugging (GET):
+```console
+$ http://127.0.0.1:5000/url/listurls
+
+Response 200 OK
+{
+    "data": {
+        "GeumgANQZMO": {
+            "creation_time": "250622222235",
+            "owner": "vaibhav_vikas",
+            "shortened_url": "GeumgANQZMO",
+            "ttl": 180,
+            "url": "yahoo.co.in"
+        },
+        "ZfcXBmEekiV": {
+            "creation_time": "250622222218",
+            "owner": "vaibhav_vikas",
+            "shortened_url": "ZfcXBmEekiV",
+            "ttl": null,
+            "url": "youtube.com"
+        },
+        "eZGWXEOanG": {
+            "creation_time": "250622222828",
+            "owner": null,
+            "shortened_url": "eZGWXEOanG",
+            "ttl": 60,
+            "url": "google.com"
+        }
+    },
+    "message": "URLs retrieved successfully",
+    "status": "SUCCESS"
+}
+```
+
 ## Credits
 Vaibhav Vikas 

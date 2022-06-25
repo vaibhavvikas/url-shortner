@@ -7,8 +7,8 @@ from url_shortner.util import response_util
 def create_user(userid: str, name: str) -> Response:
     try:
         if userid in url_shortner.users:
-            return response_util.response_to_json("Error! Userid already exists.",\
-                status="FAILED", status_code=403)
+            return response_util.response_to_json("Error! Userid already exists.",
+                                                  status="FAILED", status_code=403)
         user = User(userid, name)
         url_shortner.users[userid] = user
         print(user)
