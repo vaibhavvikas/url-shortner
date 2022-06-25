@@ -10,6 +10,8 @@ navigation:
         link: ./index.html#stores
       - name: Features
         link: ./index.html#features
+      - name: API Usage
+        link: ./index.html#api-usage
       - name: Credits
         link: ./index.html#credits
   - name: Installation
