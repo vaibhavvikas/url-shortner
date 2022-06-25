@@ -4,7 +4,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vaibhavvikas/url-shortner)
 ![pages-build-deployment](https://github.com/vaibhavvikas/url-shortner/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)
 
-A python flask application to shorten the URL provided by users whether rigestered or not.
+A python flask application to shorten the URL provided by users whether registered or not.
 
 * Free software: MIT license
 * Documentation: [https://vaibhavvikas.github.io/url-shortner](https://vaibhavvikas.github.io/url-shortner/).
@@ -18,15 +18,15 @@ The system should fulfill the following line items.
 ## Stores
 
 1. Registered user’s details, they are:
-        i. user_id
-        ii. username
-        iii. name
-        iv. list of shortened URLs
+    1. user_id
+    2. username
+    3. name
+    4. list of shortened URLs
 2. Shortened URL’s details, they are:
-        i. Actual URL
-        ii. Shortened URL
-        iii. Creation time
-        iv. TTL (Time to live)
+    1. Actual URL
+    2. Shortened URL
+    3. Creation time
+    4. TTL (Time to live)
 
 ## Features
 
