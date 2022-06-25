@@ -1,16 +1,21 @@
 remote_theme: vaibhavvikas/jekyll-minimalistic
-include:
-  - readme.md
+
 navigation:
   - name: URL Shortner
-    link: ./readme.html
+    link: ./index.html
     sublist:
       - name: Problem Statement
-        link: ./readme.html#problem-statement
-      - name: Problem Statement
-        link: ./readme.html#stores
-      - name: Problem Statement
-        link: ./readme.html#features
-      - name: Problem Statement
-        link: ./readme.html#credits
- 
+        link: ./index.html#problem-statement
+      - name: Stores
+        link: ./index.html#stores
+      - name: Features
+        link: ./index.html#features
+      - name: Credits
+        link: ./index.html#credits
+  - name: Installation
+    link: ./installation.html
+    sublist:
+      - name: Stable release
+        link: ./installation.html#stable-release
+      - name: From Sources
+        link: ./installation.html#from-sources
