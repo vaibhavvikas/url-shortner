@@ -2,8 +2,8 @@
 
 # Contents:
 
-* [URL Shortner](readme.md)
-    * [Problem Statement](readme.md#problem-statement)
+* [URL Shortner]({% link readme.md %})
+    * [Problem Statement]({% link /readme.md#problem-statement %})
     * [Stores](readme.md#stores)
     * [Features](readme.md#features)
     * [Credits](readme.md#credits)
