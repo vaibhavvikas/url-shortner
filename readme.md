@@ -40,38 +40,32 @@ The system should fulfill the following line items.
 
 ## API Usage
 
-##### Register User (POST):
+#### Register User (POST):
 ```console
 $ http://127.0.0.1:5000/user/register
-
 {
     "userid": "vaibhav_vikas",
     "name": "Vaibhav Vikas"
 }
 
 Response 200 OK:
-
 {
     "message": "User created successfully",
     "status": "SUCCESS"
 }
 ```
 
-##### Registered User shortens an URL (PUT):
+#### Registered User shortens an URL (PUT):
 ```console
 $ http://127.0.0.1:5000/user/<userid:vaibhav_vikas>/shortenurl
-
 {
     "url": "google.com",
     "ttl": 60
 }
 
-{
-    "url": "google.com"
-}
+{"url": "google.com"}
 
 Response 200 OK:
-
 {
     "data": {
         "creation_time": "250622222218",
@@ -85,7 +79,7 @@ Response 200 OK:
 }
 ```
 
-##### Get all URLs created by an User (GET):
+#### Get all URLs created by an User (GET):
 ```console
 $ http://127.0.0.1:5000/user/<userid:vaibhav_vikas>/urls
 
@@ -110,17 +104,15 @@ Response 200 OK:
     "message": "URLs retrieved successfully for vaibhav_vikas!",
     "status": "SUCCESS"
 }
-
 ```
 
-##### Anonymous user shortens an URL (PUT):
+#### Anonymous user shortens an URL (PUT):
 ```console
 $ http://127.0.0.1:5000/url/shortenurl
 
 {"url":"google.com"}
 
 Response 200 OK:
-
 {
     "data": {
         "creation_time": "250622222828",
@@ -132,10 +124,9 @@ Response 200 OK:
     "message": "URL created successfully",
     "status": "SUCCESS"
 }
-
 ```
 
-##### Get the original URL from encoded URL (GET):
+#### Get the original URL from encoded URL (GET):
 ```console
 $ http://127.0.0.1:5000/url/geturl/<shortened_url:eZGWXEOanG>
 
@@ -153,7 +144,7 @@ Response 200 OK:
 }
 ```
 
-##### Miscellaneous get all URLs for debugging (GET):
+#### Miscellaneous get all URLs for debugging (GET):
 ```console
 $ http://127.0.0.1:5000/url/listurls
 
@@ -188,4 +179,4 @@ Response 200 OK
 ```
 
 ## Credits
-Vaibhav Vikas 
+Vaibhav Vikas, 2022
