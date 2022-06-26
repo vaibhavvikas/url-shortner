@@ -1,5 +1,10 @@
 remote_theme: vaibhavvikas/jekyll-minimalistic
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jemoji
+
 navigation:
   - name: URL Shortner
     link: ./index.html
