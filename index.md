@@ -5,7 +5,8 @@ layout: default
 
 ![GitHub top language](https://img.shields.io/github/languages/top/vaibhavvikas/url-shortner)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vaibhavvikas/url-shortner)
-![pages-build-deployment](https://github.com/vaibhavvikas/url-shortner/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)
+![Python package](https://github.com/vaibhavvikas/url-shortner/actions/workflows/python-package.yml/badge.svg)
+![pages-build-deployment](https://github.com/vaibhavvikas/url-shortner/actions/workflows/pages/pages-build-deployment/badge.svg)
 
 A python flask application to shorten the URL provided by users whether registered or not.
 
