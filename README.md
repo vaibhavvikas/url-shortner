@@ -41,6 +41,8 @@ The system should fulfill the following line items.
 
 ## API Usage
 
+You can directly import the jsom file inside the postman folder to add api to postman.
+
 #### Register User (POST):
 ```console
 $ http://127.0.0.1:5000/user/register

@@ -3,8 +3,6 @@
 """Tests for `url_shortner` package."""
 
 import pytest
-
-
 import url_shortner
 
 

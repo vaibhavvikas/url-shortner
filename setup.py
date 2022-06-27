@@ -10,7 +10,7 @@ with open('README.md') as readme_file:
 with open('history.md') as history_file:
     history = history_file.read()
 
-test_requirements = ['pytest>=3', ]
+test_requirements = ['pytest>=3']
 
 project_dir = Path(__file__).parent
 
