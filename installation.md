@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
+**[Home](https://vaibhavvikas.github.io/) >> [Projects](https://vaibhavvikas.github.io/projects.html) >> [URL Shortner](https://vaibhavvikas.github.io/url-shortner/) >> Installation**
 
-# Installation
+## Installation
 
 ## Stable release
 

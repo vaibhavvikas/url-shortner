@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-# URL Shortner
+**[Home](https://vaibhavvikas.github.io/) >> [Projects](https://vaibhavvikas.github.io/projects.html) >> URL Shortner**
+
+## URL Shortner
 
 ![GitHub top language](https://img.shields.io/github/languages/top/vaibhavvikas/url-shortner)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vaibhavvikas/url-shortner)
