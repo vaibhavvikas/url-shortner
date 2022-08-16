@@ -15,6 +15,8 @@ A python flask application to shorten the URL provided by users whether register
 * Free software: MIT license
 * Documentation: [https://vaibhavvikas.github.io/url-shortner](https://vaibhavvikas.github.io/url-shortner/).
 
+**Live URL:** https://vaibhavvikas-url-shortner.herokuapp.com/
+
 ## Problem Statement
 
 Design a URL shortener that generates a shortened URL for the requested actual URL.
