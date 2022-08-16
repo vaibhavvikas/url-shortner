@@ -2,28 +2,17 @@ remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 color-scheme: auto
 
 plugins:
-  - jekyll-sitemap
   - jekyll-seo-tag
   - jemoji
+  - jekyll-sitemap
 
 navigation:
   - name: URL Shortner
     link: ./index.html
     sublist:
-      - name: Problem Statement
-        link: ./index.html#problem-statement
-      - name: Stores
-        link: ./index.html#stores
       - name: Features
         link: ./index.html#features
       - name: API Usage
         link: ./index.html#api-usage
-      - name: Credits
-        link: ./index.html#credits
   - name: Installation
     link: ./installation.html
-    sublist:
-      - name: Stable release
-        link: ./installation.html#stable-release
-      - name: From Sources
-        link: ./installation.html#from-sources
